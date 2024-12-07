@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back"
+        android:tint="@color/blue"
+        android:onClick="onBackPressed" />
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add New Task"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/jaro"
+        android:textSize="20sp" /> <!-- Fixed: Properly closed the TextView tag -->
+
+    <!-- Task Title Input -->
+    <EditText
+        android:id="@+id/taskTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pageTitle"
+        android:layout_margin="16dp"
+        android:hint="Task Title"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        android:inputType="text"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <!-- Task Description Input -->
+    <EditText
+        android:id="@+id/taskDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTitleInput"
+        android:layout_margin="16dp"
+        android:hint="Task Description"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <!-- Due Date Picker -->
+    <TextView
+        android:id="@+id/dueDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskDescriptionInput"
+        android:layout_margin="16dp"
+        android:hint="Due Date"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dueDateTextView"
+        android:layout_margin="16dp"
+        android:text="Submit"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:padding="12dp" />
+</RelativeLayout>

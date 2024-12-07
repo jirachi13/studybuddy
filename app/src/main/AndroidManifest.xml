@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studybuddy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Study Buddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyBuddy">
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Splash Screen Activity -->
+        <activity android:name=".SplashScreenActivity"
+            android:exported="false" />
+
+        <!-- Home Activity -->
+        <activity android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Task Manager Activity -->
+        <activity android:name=".TaskManagerActivity"
+            android:exported="false" />
+
+        <!-- Pomodoro Timer Activity -->
+        <activity android:name=".PomodoroTimerActivity"
+            android:exported="false" />
+
+        <!-- Add Task Activity -->
+        <activity android:name=".AddTaskActivity"
+            android:exported="false" />
+
+        <!-- Notes Activity -->
+        <activity android:name=".NotesActivity"
+            android:exported="false" />
+
+        <!-- Calendar Activity -->
+        <activity android:name=".CalendarActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
